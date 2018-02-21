@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev-server": "webpack-dev-server",
-    "dev": "webpack -w"
+    "dev": "webpack-dev-server --config webpack.config.js"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -16,7 +15,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^4.0.0-beta.2",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   }
 }

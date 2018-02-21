@@ -2,7 +2,6 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  // entry: ['webpack-hot-middleware/client?reload=true', './app.js'],
   entry: ['./app.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -22,8 +21,10 @@ module.exports = {
       },
     ],
   },
-  // plugins: [
-  //   new webpack.NamedModulesPlugin(),
-  //   new webpack.HotModuleReplacementPlugin(),
-  // ],
+  devServer: {
+    contentBase: path.join(__dirname, '/'),
+    port: 8080,
+    inline: true,
+    publicPath: '/dist/',
+  },
 }
