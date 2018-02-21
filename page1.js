@@ -1,5 +1,5 @@
 import React from 'react'
 
-const App = () => <div>12232222</div>
+const App = () => <div>Hello World</div>
 
 export default App

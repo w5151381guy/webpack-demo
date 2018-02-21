@@ -4,23 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev-server": "nodemon devServer.js -w devServer.js",
+    "dev-server": "webpack-dev-server",
     "dev": "webpack -w"
   },
   "dependencies": {
-    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "webpack-dev-server": "^2.11.1"
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
-    "nodemon": "^1.15.1",
     "webpack": "^3.11.0",
-    "webpack-dev-middleware": "^2.0.5",
-    "webpack-hot-middleware": "^2.21.0"
+    "webpack-dev-server": "^2.11.1"
   }
 }
