@@ -6,9 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist/',
   },
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -21,24 +19,14 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
     ],
   },
-  devServer: {
-    contentBase: path.join(__dirname, '/'),
-    port: 8080,
-    inline: true,
-    publicPath: '/dist/',
-    historyApiFallback: true,
-  },
+  // devtool: 'inline-source-map',
+  // devServer: {
+  //   contentBase: path.join(__dirname, '/'),
+  //   port: 8080,
+  //   inline: true,
+  //   publicPath: '/dist/',
+  //   historyApiFallback: true,
+  // },
 }
