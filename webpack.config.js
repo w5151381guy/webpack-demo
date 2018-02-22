@@ -28,5 +28,6 @@ module.exports = {
     port: 8080,
     inline: true,
     publicPath: '/dist/',
+    historyApiFallback: true,
   },
 }
